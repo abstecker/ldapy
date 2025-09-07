@@ -1,0 +1,54 @@
+# Sample users and groups for the LDAP server
+# This file will be automatically loaded when the container starts
+
+# Create organizational units
+dn: ou=people,dc=example,dc=com
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=example,dc=com
+objectClass: organizationalUnit
+ou: groups
+
+# Create a sample user
+dn: cn=john.doe,ou=people,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: john.doe
+sn: Doe
+givenName: John
+displayName: John Doe
+mail: john.doe@example.com
+uid: john.doe
+uidNumber: 1001
+gidNumber: 1001
+homeDirectory: /home/john.doe
+loginShell: /bin/bash
+userPassword: {SSHA}password123
+
+# Create another sample user
+dn: cn=jane.smith,ou=people,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: jane.smith
+sn: Smith
+givenName: Jane
+displayName: Jane Smith
+mail: jane.smith@example.com
+uid: jane.smith
+uidNumber: 1002
+gidNumber: 1002
+homeDirectory: /home/jane.smith
+loginShell: /bin/bash
+userPassword: {SSHA}password123
+
+# Create a sample group
+dn: cn=developers,ou=groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: posixGroup
+cn: developers
+gidNumber: 1001
+member: cn=john.doe,ou=people,dc=example,dc=com
+member: cn=jane.smith,ou=people,dc=example,dc=com
