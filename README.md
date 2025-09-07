@@ -7,9 +7,9 @@ This Docker Compose setup provides an OpenLDAP server with a web-based administr
 ### OpenLDAP Server
 
 - **Port**: 389 (LDAP), 636 (LDAPS)
-- **Admin DN**: `cn=admin,dc=example,dc=com`
+- **Admin DN**: `cn=admin,dc=electronicpanopti,dc=com`
 - **Admin Password**: `admin123`
-- **Base DN**: `dc=example,dc=com`
+- **Base DN**: `dc=electronicpanopti,dc=com`
 
 ### phpLDAPadmin (Web Interface)
 
@@ -28,7 +28,7 @@ This Docker Compose setup provides an OpenLDAP server with a web-based administr
 2. Access the web interface at: <http://localhost:8080>
 
 3. Login with:
-   - **Login DN**: `cn=admin,dc=example,dc=com`
+   - **Login DN**: `cn=admin,dc=electronicpanopti,dc=com`
    - **Password**: `admin123`
 
 ## LDAP Client Commands
@@ -44,19 +44,19 @@ brew install openldap
 ### Search for all entries
 
 ```bash
-ldapsearch -x -H ldap://localhost:389 -D "cn=admin,dc=example,dc=com" -w admin123 -b "dc=example,dc=com"
+ldapsearch -x -H ldap://localhost:389 -D "cn=admin,dc=electronicpanopti,dc=com" -w admin123 -b "dc=electronicpanopti,dc=com"
 ```
 
 ### Search for users
 
 ```bash
-ldapsearch -x -H ldap://localhost:389 -D "cn=admin,dc=example,dc=com" -w admin123 -b "ou=people,dc=example,dc=com"
+ldapsearch -x -H ldap://localhost:389 -D "cn=admin,dc=electronicpanopti,dc=com" -w admin123 -b "ou=people,dc=electronicpanopti,dc=com"
 ```
 
 ### Add a new user (create add-user.ldif first)
 
 ```bash
-ldapadd -x -H ldap://localhost:389 -D "cn=admin,dc=example,dc=com" -w admin123 -f add-user.ldif
+ldapadd -x -H ldap://localhost:389 -D "cn=admin,dc=electronicpanopti,dc=com" -w admin123 -f add-user.ldif
 ```
 
 ## Sample Data
