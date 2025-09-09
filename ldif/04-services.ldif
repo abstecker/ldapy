@@ -1,0 +1,95 @@
+# IT Services and Applications
+# This file creates entries for various IT services, applications, and systems
+
+# Core IT Services
+dn: cn=email-service,ou=services,dc=electronicpanopti,dc=com
+objectClass: applicationEntity
+objectClass: top
+cn: email-service
+description: Corporate email service powered by Exchange
+supportedApplicationContext: messaging
+presentationAddress: mail.electronicpanopti.com:993
+seeAlso: cn=email-admin,ou=people,dc=electronicpanopti,dc=com
+
+dn: cn=ldap-service,ou=services,dc=electronicpanopti,dc=com
+objectClass: applicationEntity
+objectClass: top
+cn: ldap-service
+description: Corporate LDAP directory service
+supportedApplicationContext: directory
+presentationAddress: ldap.electronicpanopti.com:389
+seeAlso: cn=ldap-admin,ou=people,dc=electronicpanopti,dc=com
+
+dn: cn=web-portal,ou=services,dc=electronicpanopti,dc=com
+objectClass: applicationEntity
+objectClass: top
+cn: web-portal
+description: Employee self-service web portal
+supportedApplicationContext: web-application
+presentationAddress: portal.electronicpanopti.com:443
+seeAlso: cn=web-admin,ou=people,dc=electronicpanopti,dc=com
+
+dn: cn=database-service,ou=services,dc=electronicpanopti,dc=com
+objectClass: applicationEntity
+objectClass: top
+cn: database-service
+description: Primary PostgreSQL database cluster
+supportedApplicationContext: database
+presentationAddress: db.electronicpanopti.com:5432
+seeAlso: cn=dba-team,ou=groups,dc=electronicpanopti,dc=com
+
+dn: cn=monitoring-service,ou=services,dc=electronicpanopti,dc=com
+objectClass: applicationEntity
+objectClass: top
+cn: monitoring-service
+description: Infrastructure monitoring and alerting system
+supportedApplicationContext: monitoring
+presentationAddress: monitor.electronicpanopti.com:3000
+seeAlso: cn=ops-team,ou=groups,dc=electronicpanopti,dc=com
+
+# Cloud Services
+dn: cn=cloud-storage,ou=services,dc=electronicpanopti,dc=com
+objectClass: applicationEntity
+objectClass: top
+cn: cloud-storage
+description: Corporate cloud file storage and sharing
+supportedApplicationContext: file-storage
+presentationAddress: files.electronicpanopti.com:443
+seeAlso: cn=cloud-admin,ou=people,dc=electronicpanopti,dc=com
+
+dn: cn=backup-service,ou=services,dc=electronicpanopti,dc=com
+objectClass: applicationEntity
+objectClass: top
+cn: backup-service
+description: Automated backup and disaster recovery service
+supportedApplicationContext: backup
+presentationAddress: backup.electronicpanopti.com:22
+seeAlso: cn=backup-admin,ou=people,dc=electronicpanopti,dc=com
+
+# Business Applications
+dn: cn=crm-system,ou=services,dc=electronicpanopti,dc=com
+objectClass: applicationEntity
+objectClass: top
+cn: crm-system
+description: Customer Relationship Management system
+supportedApplicationContext: business-application
+presentationAddress: crm.electronicpanopti.com:443
+seeAlso: cn=sales,ou=departments,dc=electronicpanopti,dc=com
+
+dn: cn=erp-system,ou=services,dc=electronicpanopti,dc=com
+objectClass: applicationEntity
+objectClass: top
+cn: erp-system
+description: Enterprise Resource Planning system
+supportedApplicationContext: business-application
+presentationAddress: erp.electronicpanopti.com:443
+seeAlso: cn=finance,ou=departments,dc=electronicpanopti,dc=com
+
+dn: cn=hr-system,ou=services,dc=electronicpanopti,dc=com
+objectClass: applicationEntity
+objectClass: top
+cn: hr-system
+description: Human Resources Information System
+supportedApplicationContext: business-application
+presentationAddress: hr.electronicpanopti.com:443
+seeAlso: cn=hr,ou=departments,dc=electronicpanopti,dc=com

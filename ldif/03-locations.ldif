@@ -1,0 +1,75 @@
+# Office Locations and Facilities
+# This file creates location entries for various offices and facilities
+
+# Main headquarters
+dn: cn=headquarters,ou=locations,dc=electronicpanopti,dc=com
+objectClass: locality
+objectClass: organizationalRole
+cn: headquarters
+l: San Francisco
+st: California
+postalCode: 94105
+street: 123 Market Street
+description: Corporate headquarters and main office
+telephoneNumber: +1-415-555-0100
+facsimileTelephoneNumber: +1-415-555-0199
+
+# Regional offices
+dn: cn=east-coast-office,ou=locations,dc=electronicpanopti,dc=com
+objectClass: locality
+objectClass: organizationalRole
+cn: east-coast-office
+l: New York
+st: New York
+postalCode: 10001
+street: 456 Broadway
+description: East Coast regional office
+telephoneNumber: +1-212-555-0200
+facsimileTelephoneNumber: +1-212-555-0299
+
+dn: cn=european-office,ou=locations,dc=electronicpanopti,dc=com
+objectClass: locality
+objectClass: organizationalRole
+cn: european-office
+l: London
+st: England
+postalCode: EC1A 1BB
+street: 789 Threadneedle Street
+description: European headquarters
+telephoneNumber: +44-20-7555-0300
+facsimileTelephoneNumber: +44-20-7555-0399
+
+dn: cn=asia-pacific-office,ou=locations,dc=electronicpanopti,dc=com
+objectClass: locality
+objectClass: organizationalRole
+cn: asia-pacific-office
+l: Singapore
+st: Singapore
+postalCode: 018989
+street: 321 Raffles Place
+description: Asia Pacific regional office
+telephoneNumber: +65-6555-0400
+facsimileTelephoneNumber: +65-6555-0499
+
+# Data centers
+dn: cn=datacenter-primary,ou=locations,dc=electronicpanopti,dc=com
+objectClass: locality
+objectClass: organizationalRole
+cn: datacenter-primary
+l: Ashburn
+st: Virginia
+postalCode: 20147
+street: 555 Data Center Drive
+description: Primary data center facility
+telephoneNumber: +1-703-555-0500
+
+dn: cn=datacenter-backup,ou=locations,dc=electronicpanopti,dc=com
+objectClass: locality
+objectClass: organizationalRole
+cn: datacenter-backup
+l: Portland
+st: Oregon
+postalCode: 97201
+street: 777 Server Farm Lane
+description: Backup and disaster recovery data center
+telephoneNumber: +1-503-555-0600

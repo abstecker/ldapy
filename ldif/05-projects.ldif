@@ -1,0 +1,79 @@
+# Company Projects
+# This file creates entries for various company projects
+
+# Active Projects
+dn: cn=project-panopticon-v2,ou=projects,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: project-panopticon-v2
+description: Next generation surveillance platform development
+roleOccupant: cn=john.doe,ou=people,dc=electronicpanopti,dc=com
+roleOccupant: cn=jane.smith,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+telephoneNumber: +1-555-0100-ext-1001
+
+dn: cn=project-quantum-encryption,ou=projects,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: project-quantum-encryption
+description: Research and development of quantum encryption methods
+roleOccupant: cn=alice.quantum,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+telephoneNumber: +1-555-0100-ext-1002
+
+dn: cn=project-global-expansion,ou=projects,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: project-global-expansion
+description: International market expansion initiative
+roleOccupant: cn=sales-director,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=sales,ou=departments,dc=electronicpanopti,dc=com
+seeAlso: cn=marketing,ou=departments,dc=electronicpanopti,dc=com
+telephoneNumber: +1-555-0300-ext-2001
+
+dn: cn=project-ai-integration,ou=projects,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: project-ai-integration
+description: Integration of AI capabilities into existing products
+roleOccupant: cn=ml-engineer,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+telephoneNumber: +1-555-0100-ext-1003
+
+# Infrastructure Projects
+dn: cn=project-datacenter-migration,ou=projects,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: project-datacenter-migration
+description: Migration to new primary data center facility
+roleOccupant: cn=infrastructure-lead,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=datacenter-primary,ou=locations,dc=electronicpanopti,dc=com
+telephoneNumber: +1-555-0100-ext-1004
+
+dn: cn=project-cloud-migration,ou=projects,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: project-cloud-migration
+description: Migration of legacy systems to cloud infrastructure
+roleOccupant: cn=cloud-architect,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+telephoneNumber: +1-555-0100-ext-1005
+
+# Completed Projects (archived)
+dn: cn=project-mobile-app-v1,ou=projects,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: project-mobile-app-v1
+description: First generation mobile application (COMPLETED)
+roleOccupant: cn=archived-lead,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+telephoneNumber: +1-555-0100-ext-9001
+
+dn: cn=project-legacy-system-replacement,ou=projects,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: project-legacy-system-replacement
+description: Replacement of legacy mainframe systems (COMPLETED)
+roleOccupant: cn=archived-lead,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+telephoneNumber: +1-555-0100-ext-9002

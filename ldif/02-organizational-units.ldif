@@ -1,0 +1,71 @@
+# Organizational Units for Electronic Panopticon
+# This file creates various organizational units and departments
+
+# Create main organizational units
+dn: ou=departments,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: departments
+description: All company departments
+
+dn: ou=locations,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: locations
+description: Office locations and facilities
+
+dn: ou=projects,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: projects
+description: Active and archived projects
+
+dn: ou=equipment,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: equipment
+description: Company equipment and assets
+
+dn: ou=services,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: services
+description: IT services and applications
+
+# Departments
+dn: ou=engineering,ou=departments,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: engineering
+description: Engineering and Development Department
+telephoneNumber: +1-555-0101
+facsimileTelephoneNumber: +1-555-0102
+
+dn: ou=marketing,ou=departments,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: marketing
+description: Marketing and Communications Department
+telephoneNumber: +1-555-0201
+facsimileTelephoneNumber: +1-555-0202
+
+dn: ou=sales,ou=departments,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: sales
+description: Sales and Business Development Department
+telephoneNumber: +1-555-0301
+facsimileTelephoneNumber: +1-555-0302
+
+dn: ou=hr,ou=departments,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: hr
+description: Human Resources Department
+telephoneNumber: +1-555-0401
+facsimileTelephoneNumber: +1-555-0402
+
+dn: ou=finance,ou=departments,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: finance
+description: Finance and Accounting Department
+telephoneNumber: +1-555-0501
+facsimileTelephoneNumber: +1-555-0502
+
+dn: ou=legal,ou=departments,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: legal
+description: Legal and Compliance Department
+telephoneNumber: +1-555-0601
+facsimileTelephoneNumber: +1-555-0602

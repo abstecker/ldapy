@@ -1,0 +1,118 @@
+# Company Equipment and Assets
+# This file creates entries for various equipment, servers, and assets
+
+# Server Equipment
+dn: cn=srv-web-01,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: srv-web-01
+description: Primary web server - Dell PowerEdge R740
+serialNumber: DELLR740-001-2024
+l: datacenter-primary
+owner: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+seeAlso: cn=web-portal,ou=services,dc=electronicpanopti,dc=com
+
+dn: cn=srv-db-01,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: srv-db-01
+description: Primary database server - HPE ProLiant DL380
+serialNumber: HPEDL380-001-2024
+l: datacenter-primary
+owner: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+seeAlso: cn=database-service,ou=services,dc=electronicpanopti,dc=com
+
+dn: cn=srv-backup-01,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: srv-backup-01
+description: Backup server - Synology RS3621RPxs
+serialNumber: SYNRS3621-001-2024
+l: datacenter-backup
+owner: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+seeAlso: cn=backup-service,ou=services,dc=electronicpanopti,dc=com
+
+dn: cn=srv-ldap-01,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: srv-ldap-01
+description: LDAP directory server - Ubuntu Server 22.04 LTS
+serialNumber: VIRTUAL-LDAP-001
+l: datacenter-primary
+owner: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+seeAlso: cn=ldap-service,ou=services,dc=electronicpanopti,dc=com
+
+# Network Equipment
+dn: cn=switch-core-01,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: switch-core-01
+description: Core network switch - Cisco Nexus 9300
+serialNumber: CISCO9300-001-2024
+l: datacenter-primary
+owner: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+
+dn: cn=firewall-01,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: firewall-01
+description: Network firewall - Palo Alto PA-3220
+serialNumber: PALO3220-001-2024
+l: datacenter-primary
+owner: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+
+dn: cn=router-wan-01,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: router-wan-01
+description: WAN router - Cisco ASR 1001-X
+serialNumber: CISCOASR1001-001-2024
+l: datacenter-primary
+owner: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+
+# Storage Equipment
+dn: cn=storage-san-01,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: storage-san-01
+description: SAN storage array - NetApp FAS2750
+serialNumber: NETAPPFAS2750-001-2024
+l: datacenter-primary
+owner: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+
+dn: cn=storage-nas-01,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: storage-nas-01
+description: NAS storage - QNAP TS-h973AX
+serialNumber: QNAPTS973AX-001-2024
+l: headquarters
+owner: cn=engineering,ou=departments,dc=electronicpanopti,dc=com
+
+# Office Equipment
+dn: cn=printer-hq-floor2,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: printer-hq-floor2
+description: Office printer - HP LaserJet Enterprise M607n
+serialNumber: HPM607N-HQ2-001
+l: headquarters
+owner: cn=hr,ou=departments,dc=electronicpanopti,dc=com
+
+dn: cn=printer-hq-floor3,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: printer-hq-floor3
+description: Office printer - Canon imageRUNNER ADVANCE DX C5760i
+serialNumber: CANONDXC5760-HQ3-001
+l: headquarters
+owner: cn=marketing,ou=departments,dc=electronicpanopti,dc=com
+
+dn: cn=projector-conf-room-a,ou=equipment,dc=electronicpanopti,dc=com
+objectClass: device
+objectClass: top
+cn: projector-conf-room-a
+description: Conference room projector - Epson PowerLite Pro G7905U
+serialNumber: EPSONG7905U-CRA-001
+l: headquarters
+owner: cn=hr,ou=departments,dc=electronicpanopti,dc=com

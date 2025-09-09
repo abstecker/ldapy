@@ -1,0 +1,88 @@
+# Security and Access Control Entries
+# This file creates entries for security roles, certificates, and access policies
+
+# Create security organizational unit
+dn: ou=security,dc=electronicpanopti,dc=com
+objectClass: organizationalUnit
+ou: security
+description: Security policies, roles, and certificates
+
+# Security Roles
+dn: cn=domain-admins,ou=security,dc=electronicpanopti,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: domain-admins
+description: Domain administrators with full system access
+member: cn=admin,dc=electronicpanopti,dc=com
+member: cn=john.doe,ou=people,dc=electronicpanopti,dc=com
+
+dn: cn=backup-operators,ou=security,dc=electronicpanopti,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: backup-operators
+description: Users authorized to perform backup operations
+member: cn=backup-admin,ou=people,dc=electronicpanopti,dc=com
+member: cn=infrastructure-lead,ou=people,dc=electronicpanopti,dc=com
+
+dn: cn=network-operators,ou=security,dc=electronicpanopti,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: network-operators
+description: Users authorized to configure network equipment
+member: cn=network-admin,ou=people,dc=electronicpanopti,dc=com
+
+# Access Policies
+dn: cn=datacenter-access,ou=security,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: datacenter-access
+description: Physical access policy for data center facilities
+roleOccupant: cn=infrastructure-lead,ou=people,dc=electronicpanopti,dc=com
+roleOccupant: cn=security-officer,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=datacenter-primary,ou=locations,dc=electronicpanopti,dc=com
+seeAlso: cn=datacenter-backup,ou=locations,dc=electronicpanopti,dc=com
+
+dn: cn=server-room-access,ou=security,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: server-room-access
+description: Access policy for office server rooms
+roleOccupant: cn=it-support,ou=people,dc=electronicpanopti,dc=com
+roleOccupant: cn=facility-manager,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=headquarters,ou=locations,dc=electronicpanopti,dc=com
+
+# SSL/TLS Certificates (metadata)
+dn: cn=wildcard-electronicpanopti-com,ou=security,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: wildcard-electronicpanopti-com
+description: Wildcard SSL certificate for *.electronicpanopti.com
+roleOccupant: cn=security-officer,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=web-portal,ou=services,dc=electronicpanopti,dc=com
+seeAlso: cn=email-service,ou=services,dc=electronicpanopti,dc=com
+
+dn: cn=ca-root-certificate,ou=security,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: ca-root-certificate
+description: Corporate root certificate authority
+roleOccupant: cn=security-officer,ou=people,dc=electronicpanopti,dc=com
+roleOccupant: cn=crypto-admin,ou=people,dc=electronicpanopti,dc=com
+
+# Security Compliance
+dn: cn=iso27001-compliance,ou=security,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: iso27001-compliance
+description: ISO 27001 information security management compliance
+roleOccupant: cn=compliance-officer,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=legal,ou=departments,dc=electronicpanopti,dc=com
+
+dn: cn=gdpr-compliance,ou=security,dc=electronicpanopti,dc=com
+objectClass: organizationalRole
+objectClass: top
+cn: gdpr-compliance
+description: GDPR data protection compliance program
+roleOccupant: cn=privacy-officer,ou=people,dc=electronicpanopti,dc=com
+roleOccupant: cn=compliance-officer,ou=people,dc=electronicpanopti,dc=com
+seeAlso: cn=legal,ou=departments,dc=electronicpanopti,dc=com
