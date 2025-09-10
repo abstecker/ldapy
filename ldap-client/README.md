@@ -51,10 +51,10 @@ cargo run -- users --output json
 cargo run -- --url ldap://your-server:389 test
 
 # Use different credentials
-cargo run -- --bind-dn "cn=admin,dc=example,dc=com" --password "secret" test
+cargo run -- --bind-dn "cn=admin,dc=electronicpanopti,dc=com" --password "secret" test
 
 # Use different base DN
-cargo run -- --base-dn "dc=example,dc=com" search
+cargo run -- --base-dn "dc=electronicpanopti,dc=com" search
 ```
 
 ### Advanced Search Examples
