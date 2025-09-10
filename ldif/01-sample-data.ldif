@@ -2,16 +2,16 @@
 # This file will be automatically loaded when the container starts
 
 # Create organizational units
-dn: ou=people,dc=example,dc=com
+dn: ou=people,dc=electronicpanopti,dc=com
 objectClass: organizationalUnit
 ou: people
 
-dn: ou=groups,dc=example,dc=com
+dn: ou=groups,dc=electronicpanopti,dc=com
 objectClass: organizationalUnit
 ou: groups
 
 # Create a sample user
-dn: cn=john.doe,ou=people,dc=example,dc=com
+dn: cn=john.doe,ou=people,dc=electronicpanopti,dc=com
 objectClass: inetOrgPerson
 objectClass: posixAccount
 objectClass: shadowAccount
@@ -28,7 +28,7 @@ loginShell: /bin/bash
 userPassword: {SSHA}password123
 
 # Create another sample user
-dn: cn=jane.smith,ou=people,dc=example,dc=com
+dn: cn=jane.smith,ou=people,dc=electronicpanopti,dc=com
 objectClass: inetOrgPerson
 objectClass: posixAccount
 objectClass: shadowAccount
@@ -45,10 +45,10 @@ loginShell: /bin/bash
 userPassword: {SSHA}password123
 
 # Create a sample group
-dn: cn=developers,ou=groups,dc=example,dc=com
+dn: cn=developers,ou=groups,dc=electronicpanopti,dc=com
 objectClass: groupOfNames
 objectClass: posixGroup
 cn: developers
 gidNumber: 1001
-member: cn=john.doe,ou=people,dc=example,dc=com
-member: cn=jane.smith,ou=people,dc=example,dc=com
+member: cn=john.doe,ou=people,dc=electronicpanopti,dc=com
+member: cn=jane.smith,ou=people,dc=electronicpanopti,dc=com

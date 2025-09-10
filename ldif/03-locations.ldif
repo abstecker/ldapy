@@ -3,8 +3,8 @@
 
 # Main headquarters
 dn: cn=headquarters,ou=locations,dc=electronicpanopti,dc=com
-objectClass: locality
 objectClass: organizationalRole
+objectClass: top
 cn: headquarters
 l: San Francisco
 st: California
@@ -16,8 +16,8 @@ facsimileTelephoneNumber: +1-415-555-0199
 
 # Regional offices
 dn: cn=east-coast-office,ou=locations,dc=electronicpanopti,dc=com
-objectClass: locality
 objectClass: organizationalRole
+objectClass: top
 cn: east-coast-office
 l: New York
 st: New York
@@ -28,8 +28,8 @@ telephoneNumber: +1-212-555-0200
 facsimileTelephoneNumber: +1-212-555-0299
 
 dn: cn=european-office,ou=locations,dc=electronicpanopti,dc=com
-objectClass: locality
 objectClass: organizationalRole
+objectClass: top
 cn: european-office
 l: London
 st: England
@@ -40,8 +40,8 @@ telephoneNumber: +44-20-7555-0300
 facsimileTelephoneNumber: +44-20-7555-0399
 
 dn: cn=asia-pacific-office,ou=locations,dc=electronicpanopti,dc=com
-objectClass: locality
 objectClass: organizationalRole
+objectClass: top
 cn: asia-pacific-office
 l: Singapore
 st: Singapore
@@ -53,8 +53,8 @@ facsimileTelephoneNumber: +65-6555-0499
 
 # Data centers
 dn: cn=datacenter-primary,ou=locations,dc=electronicpanopti,dc=com
-objectClass: locality
 objectClass: organizationalRole
+objectClass: top
 cn: datacenter-primary
 l: Ashburn
 st: Virginia
@@ -64,8 +64,8 @@ description: Primary data center facility
 telephoneNumber: +1-703-555-0500
 
 dn: cn=datacenter-backup,ou=locations,dc=electronicpanopti,dc=com
-objectClass: locality
 objectClass: organizationalRole
+objectClass: top
 cn: datacenter-backup
 l: Portland
 st: Oregon
