@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+# Basic data (if not already loaded)
+ldapadd -x -H ldap://localhost:389 -D "cn=admin,dc=electronicpanopti,dc=com" -w admin123 -f ldif/01-sample-data.ldif
+
+# Additional organizational data
+ldapadd -x -H ldap://localhost:389 -D "cn=admin,dc=electronicpanopti,dc=com" -w admin123 -f ldif/02-organizational-units.ldif
+
+# Not working
+# ldapadd -x -H ldap://localhost:389 -D "cn=admin,dc=electronicpanopti,dc=com" -w admin123 -f ldif/03-locations.ldif
+# ldapadd -x -H ldap://localhost:389 -D "cn=admin,dc=electronicpanopti,dc=com" -w admin123 -f ldif/04-services.ldif
+
+ldapadd -x -H ldap://localhost:389 -D "cn=admin,dc=electronicpanopti,dc=com" -w admin123 -f ldif/05-projects.ldif
+ldapadd -x -H ldap://localhost:389 -D "cn=admin,dc=electronicpanopti,dc=com" -w admin123 -f ldif/06-equipment.ldif
+ldapadd -x -H ldap://localhost:389 -D "cn=admin,dc=electronicpanopti,dc=com" -w admin123 -f ldif/07-security.ldif
